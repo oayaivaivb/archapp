@@ -12,7 +12,9 @@ public class EventConsumerListener {
     private final NotificationService notificationService;
 
     @Autowired
-    public EventConsumerListener(NotificationService notificationService) {
+    public EventConsumerListener(
+        NotificationService notificationService
+    ) {
         this.notificationService = notificationService;
     }
 
@@ -20,4 +22,5 @@ public class EventConsumerListener {
     public void handleUserEvent(UserCreatedEvent event) {
         notificationService.sendNotification(event);
     }
+
 }
