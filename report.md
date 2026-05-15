@@ -45,6 +45,7 @@
 > * **Статус Pending в Prometheus:**
 > <img src="screens/Prometheus.png" alt="Prometheus"/>
 > <img src="screens/Prometheus1.png" alt="Prometheus1"/>
+>
 > * **Письмо в Mailpit (Mailpit):**
 > <img src="screens/Mailpit.png" alt="Mailpit"/>
 
