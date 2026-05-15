@@ -12,7 +12,7 @@
 * **Администрирование:** Доступ к управлению событиями осуществляется через админ-панель Axon Server (`localhost:8024`).
 
 > **Скриншот панели управления Axon Server (Standalone node):**
-> <img src="screens/Prometheus.png" alt="Prometheus"/>
+> <img src="screens/Standalone node.png" alt="Standalone node"/>
 
 ## 2. Реализация записи (Command Side)
 
@@ -20,16 +20,13 @@
 * **События:** События сохраняются в Axon Server в неизменяемом виде. Это позволяет просматривать историю транзакций и анализировать состояние системы на любой момент времени.
 
 > **Просмотр событий в Axon Server (Search/Query):**
-> <img src="screens/Prometheus.png" alt="Prometheus"/>
+> <img src="screens/Search/Query.png" alt="Search/Query"/>
 
 
 ## 3. Модель чтения и проекции (Query Side)
 
 * **Проекции:** Read-модель (`Balance`) обновляется через обработчики событий (`@EventHandler`). Она хранит только текущий результат, оптимизированный для быстрых ответов на GET-запросы.
 * **Консистентность:** Данные в модели чтения обновляются сразу после того, как событие было успешно сохранено в Event Store.
-
-> **Скриншот итогового состояния баланса (Read Model):**
-> <img src="screens/Prometheus.png" alt="Prometheus"/>
 
 ## 4. Демонстрация работы API
 
@@ -41,9 +38,9 @@
 
 > **Скриншоты тестирования API:**
 > * **Операция пополнения счета:**
-> <img src="screens/Prometheus.png" alt="Prometheus"/>
+> <img src="screens/пополнения счета.png" alt="пополнения счета"/>
 > * **История транзакций пользователя:**
-> <img src="screens/Prometheus.png" alt="Prometheus"/>
+> <img src="screens/История транзакций пользователя.png" alt="История транзакций пользователя"/>
 
 
 ## Итог
